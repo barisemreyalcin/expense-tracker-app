@@ -28,17 +28,17 @@ function App() {
         date={expenseList[0].date}
         title={expenseList[0].title}
         price={expenseList[0].price}
-      ></ExpenseItem>
-            <ExpenseItem 
+      />
+      <ExpenseItem 
         date={expenseList[1].date}
         title={expenseList[1].title}
         price={expenseList[1].price}
-      ></ExpenseItem>
-            <ExpenseItem 
+      />
+      <ExpenseItem 
         date={expenseList[2].date}
         title={expenseList[2].title}
         price={expenseList[2].price}
-      ></ExpenseItem>
+      />
     </div>
   );
 }
