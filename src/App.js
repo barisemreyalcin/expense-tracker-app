@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ExpenseList from "./components/Expenses/ExpenseList";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
-  const expenseList = [
+  const EXISTING_EXPENSES = [
     {
       id: 1,
       date: new Date(2023, 0, 1),
@@ -25,9 +25,10 @@ function App() {
     }
   ]
 
+  const [expenseList, setExpenseList] = useState(EXISTING_EXPENSES);
+
   const addExpenseHandler = (expenseData) => {
-    console.log("s");
-    console.log(expenseData);
+    setExpenseList(prevExpenseList => [expenseData, ...prevExpenseList]);
 
   }
 
