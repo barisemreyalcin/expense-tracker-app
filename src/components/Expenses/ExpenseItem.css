@@ -3,9 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: .6em 1.2em;
-    margin: 1em 0;
     background-color: #fdf0fd;
     border-radius: .5em;
+}
+
+.expense-item:not(:last-child) {
+    margin: 1em 0;
 }
 
 .expense-item__description {
