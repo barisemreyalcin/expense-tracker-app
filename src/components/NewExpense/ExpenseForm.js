@@ -44,7 +44,7 @@ function ExpenseForm(props) {
                 </div>
                 <div className="new-expense__control">
                     <label>Amount</label>
-                    <input type="number" value={enteredPrice} onChange={amountChangeHandler}/>
+                    <input type="number" min='5' step='5' value={enteredPrice} onChange={amountChangeHandler}/>
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>

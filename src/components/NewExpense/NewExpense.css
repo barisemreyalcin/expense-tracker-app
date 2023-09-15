@@ -7,12 +7,12 @@
     text-align: center;
 }
 
-.collapse-form {
+button.collapse-form {
     background-color: #e3d0e8;
     font: inherit;
     font-weight: bold;
     text-align: center;
-    padding: .6em 1.2em;
+    padding: .75em 1.5em;
     border: none;
     border-radius: .5em;
     cursor: pointer;
