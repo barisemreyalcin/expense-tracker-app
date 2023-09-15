@@ -31,9 +31,17 @@
     width: 100%;
     border-radius: .5em;
     border: none;
-    margin-top: 2em;
     cursor: pointer;
     transition: background-color .4s;
+}
+
+button.add-expense {
+    margin-top: 1em;
+}
+
+button.cancel {
+    margin-top: 2em;
+    color: #3b3b3b;
 }
 
 @media(min-width: 576px) {
@@ -53,6 +61,8 @@
 
     .new-expense__actions button{
         width: unset;
+        margin-top: 2em;
+        margin-left: 1em;
     }
 
     .new-expense__control input {
